@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorstab. | Color</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header><div><h2>Color Picker / Generator</h2> <p>saved colors</p></div></header>
+    
+<!-- Start Nav Section -->
+<nav id="navbar" class="navbar">
+    <ul class="nav-menu">
+      <li>
+        <a data-scroll="home" href="../index.html" class="dot ">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="about" href="#" class="dot active">
+          <span>About me</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="services" href="Linear.html" class="dot">
+          <span>Services</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="test" href="Linear.html" class="dot">
+          <span>Testimonials</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="contact" href="contact.html" class="dot">
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End Nav Section -->
+
+
+
+    <div class="container">
+        <div class="colors-container">
+            <div class="screen"  id="color-screen">
+                <h4>color</h4>
+            </div>
+           <div class="content">
+            <span class="Copied">Copied</span>
+            <h1 id="print-color">#ffffff</h1>
+           <p>Choose color: <input type="color" name="color" id="color-input"  value="#ffffff" ></p>
+           <p>Blur color: <input type="range" name="" id="color-blur" value="100"></p>
+           <button id="color-btn">Random color</button>
+           </div>
+        </div>
+    </div>
+    <h1>in progress</h1>
+    <script src="index.js"></script>
+    <script src="../js/color.js"></script>
+</body>
+</html>
