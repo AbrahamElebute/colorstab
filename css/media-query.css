@@ -1,0 +1,26 @@
+@media (max-width: 320px) {
+    .saved-container_img{
+        height: 40px;
+        width: 40px;
+ }
+ 
+ }
+@media (max-width: 425px) {
+    .saved-container .saved-container_img_con p{
+        display: none;
+    }
+   
+  }
+  @media (max-width: 664px) {
+  .section2{
+    gap: 18px;
+  }
+}
+  @media (max-width: 768px) {
+    .nav-bar-con{  
+        display: block;
+     }
+    .navbar ul{  
+      display: none;
+     }
+  }

@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 *:focus{
   border: none;
@@ -81,9 +80,16 @@ header{
   transition: 1s;
   z-index: 100;
 }
-.header-active{
+header a{
+  text-decoration: none;
+}
+.main-header_active{
   background-image: linear-gradient(120deg,orangered,yellow);
   position: sticky;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
   top: 0;
   animation: slidIn 1s ease ;
 }
@@ -105,19 +111,34 @@ header{
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .saved-container{
   cursor: pointer;
   transition: 1s;
 }
-.saved-container:hover{
-  transform: translateY(-5px);
+.saved-container .saved-container_img_con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.saved-container .saved-container_img_con p{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50%;
+  transition: 1s;
+}
+.saved-container .saved-container_img_con p:hover{
+  width: 100%;
   color: orangered;
 }
-@media (max-width: 375px) {
-  .saved-container{
-    font-size: 8px;
-  }
+.saved-container_img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
+
 .navbar {
   position: fixed;
   z-index: 999;
@@ -206,18 +227,12 @@ header{
   display: none;
   transform: translate(30px,165px);
 }
-@media (max-width: 768px) {
-  .nav-bar-con{  display: block; }
-  .navbar ul{  
-    display: none;
-   }
-}
 .nav-bar{
   height: 50px;
   width: 50px;
   background-color: black;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -320,24 +335,23 @@ https://wpt.fyi/results/css/css-text-decor */
 .hero{
  height: 100vh;
  width: 100%;
- padding-top: 35px;
  background-image: url(asset/hero.jpg);
+ background-color: rgba(0, 0, 0, 0.2);
+ background-blend-mode: multiply;
  background-size: cover;
  background-position: center;
  background-attachment: fixed;
  display: flex;
  align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: white;
   }
 .hero div{
-  margin-bottom: 250px;
-  margin-left: 10px;
-  font-size: 23px;
+  font-size: 33px;
+  margin-bottom: 10px;
   }
-  @media (max-width: 425px) {
-    .hero div{
-      margin-bottom: 150px;
-      }
-  }
+
 .hero p{
   background-image: linear-gradient(302deg,orangered,yellow);
   background-clip: text;
@@ -374,11 +388,6 @@ https://wpt.fyi/results/css/css-text-decor */
   justify-content: center;
   gap: 50px;
 }
-@media (max-width: 664px) {
-  .section2{
-    gap: 18px;
-  }
-}
 .section2-icon{
   display: flex;
   flex-direction: column;
@@ -397,6 +406,12 @@ https://wpt.fyi/results/css/css-text-decor */
   align-items: center;
   border-radius: 50%;
   box-shadow:5px 4px 6px #00000085;
+  transition: 0.5s;
+} 
+.section2-icon a:hover{
+  transform: translateY(-4px);
+  box-shadow:0px 4px 6px #00000085;
+
 }
 .section2 h2{
   width: 50%;
@@ -444,11 +459,11 @@ https://wpt.fyi/results/css/css-text-decor */
 }
 .section3-img2{
   position: absolute; 
-  transform: translate(-368px ,-27px);
+  transform: translate(-384px ,-16px);
 }
 .section4-img2{
   position: absolute; 
-  transform: translate(-437px ,-27px);
+  transform: translate(-415px ,-17px);
 }
 
 @media (max-width: 768px) {
@@ -457,18 +472,18 @@ https://wpt.fyi/results/css/css-text-decor */
     width: 300px;
   }
   .section3-img2 {
-    transform: translate(-274px ,-27px);
+    transform: translate(-289px ,-11px);
 }
 .section4-img2 {
-  transform: translate(-332px ,-27px);
+  transform: translate(-312px ,-12px);
 }
 }
 @media (max-width:320px) {
   .section3-img2 {
-    transform: translate(-200px ,-21px);
+    transform: translate(-187px ,-10px);
 }
 .section4-img2 {
-  transform: translate(-159px ,-27px);
+  transform: translate(-170px ,-10px) ;
 }
 }
 @media (max-width: 664px) {
@@ -529,6 +544,199 @@ https://wpt.fyi/results/css/css-text-decor */
     opacity: 1;
   }
 }
+/* .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  background-color: red;
+  width: 260px;
+  height: 352px;
+  padding: 20px;
+  margin: 10px;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.box:hover{
+  background-image: linear-gradient(120deg,orangered,yellow);
+  transform: scale(1.2);
+  z-index: 1000;
+}
+.box h2{
+  background-color: gold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 25px;
+  color: transparent;
+  font-weight: 900;
+  text-transform: capitalize;
+} */
+.section-5{
+  background-image: linear-gradient(45deg,orangered 50%,yellow 50%);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+ 
+}
+
+.box-container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.box-container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.box-container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+.box-container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+.box-container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-image: linear-gradient(258deg,orangered,yellow);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.box-container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.box-container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(255 255 255 / 14%);
+}
+
+.box-container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.box-container .card .box img {
+  position: absolute;
+  top: 6px;
+  right: 86px;
+  font-size: 8rem;
+  opacity: 0.3;
+  width: 189px;
+}
+
+.box-container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.box-container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color:black;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.box-container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.box-container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.section-5{
+  text-align: center;
+  margin-top: 50px;
+}
+.section-5 h1{
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.note{
+  font-size: 1.5em;
+  padding:15px;
+  background-image: url(asset/1658692545485.png);
+   background-attachment: fixed; 
+   background-repeat: no-repeat; 
+   background-color: #00000067;
+   background-blend-mode:multiply;
+   color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.note p:first-of-type:first-letter {
+  font-size: 34px;
+}
+.note::before{
+  content: "";
+  display: block;
+  height: 2px;
+  background-image: linear-gradient(258deg,orangered,yellow);
+  position: absolute;
+  left: 0;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.note::after{
+  content: "";
+  display: block;
+  height: 2px;
+  background-image: linear-gradient(258deg,yellow,orangered);
+  position: absolute;
+  right: 0;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.note a{
+  color: orangered;
+}
 .container{
   display: flex;
   align-items: center;
@@ -536,6 +744,7 @@ https://wpt.fyi/results/css/css-text-decor */
   justify-content: center;
   height: 90vh;
   gap: 70px;
+  margin-top: 100px;
 }
 .colors-container{
  height: 500px;
@@ -633,7 +842,7 @@ https://wpt.fyi/results/css/css-text-decor */
 }
 .content p{
   text-align: left;
-  margin-bottom: 20px;
+  margin-top: 38px;
   font-size: 20px;
 }
 .content p input{
@@ -666,4 +875,62 @@ input[type="color" i]{
 .colors-container:hover{
   outline: 1px, orangered, solid;
   z-index: 10000000;  
+}
+footer{
+  display: flex;
+  background-image: linear-gradient(45deg,orangered 50%,yellow 50%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.footer-icon{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  justify-content: center;
+}
+.footer-icon a{
+  text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.39);
+  color: gray;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow:5px 4px 6px #00000085;
+  transition: 0.5s;
+} 
+.footer-icon a:hover{
+  transform: translateY(-4px);
+  box-shadow:0px 4px 6px #00000085;
+}
+.footer-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-page h5{
+  color: red;
+}
+.footer-content{
+  width: 100%;
+}
+.footer-content p{
+  text-align: center;
+  margin-top: 26px;
+}
+.footer-page{
+  display: flex;
+  align-items: center;
+  justify-content:left ;
+  gap: 20px;
 }

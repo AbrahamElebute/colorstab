@@ -50,13 +50,13 @@ function deleting(textIndex, text) {
         }
     }, sPerChar * 1000); 
 }
-const header = document.querySelector("#header");
+const mainHeader = document.querySelector("#main-header");
 window.addEventListener("scroll", function (e) {
   e.preventDefault();
   if (window.scrollY >= 700) {
-    header.classList.add("header-active");
+    mainHeader.classList.add("main-header_active");
   } else {
-    header.classList.remove("header-active");
+    mainHeader.classList.remove("main-header_active");
   }
 });
 

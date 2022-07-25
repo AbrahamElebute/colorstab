@@ -6,43 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorstab. | Color</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/color-style.css">
 </head>
 <body>
-    <header><div><h2>Color Picker / Generator</h2> <p>saved colors</p></div></header>
+  <div class="spinner-div">
+    <div class="spinner-logo">
+      <h2>Colorstab.</h2>
+      <p>multicolored</p>
+    </div>
+  </div>
     
-<!-- Start Nav Section -->
-<nav id="navbar" class="navbar">
+  <nav id="navbar" class="navbar">
     <ul class="nav-menu">
       <li>
-        <a data-scroll="home" href="../index.html" class="dot ">
-          <span>Home</span>
+        <a href="index.html" class="dot active ">
+        <span>Home</span>
         </a>
       </li>
       <li>
-        <a data-scroll="about" href="#" class="dot active">
-          <span>About me</span>
+        <a href="html/color.html" class="dot ">
+        <span>Color</span>
         </a>
       </li>
       <li>
-        <a data-scroll="services" href="Linear.html" class="dot">
-          <span>Services</span>
+        <a href="linear.html" class="dot">
+        <span>Linear-gradient</span>
         </a>
       </li>
       <li>
-        <a data-scroll="test" href="Linear.html" class="dot">
-          <span>Testimonials</span>
+        <a href="radial.html" class="dot">
+        <span>Radial-gradient</span>
         </a>
       </li>
       <li>
-        <a data-scroll="contact" href="contact.html" class="dot">
-          <span>Contact</span>
+        <a href="contact.html" class="dot">
+        <span>Contact</span>
         </a>
       </li>
     </ul>
+    <div class="nav-bar-con">
+       <div class="nav-bar">
+        <div>
+          <div class="nav-bars"></div>
+          <div class="nav-bars"></div>
+          <div class="nav-bars"></div>
+        </div>
+      </div>
+    </div>
   </nav>
-  <!-- End Nav Section -->
-
-
+  <div class="moblieNav">
+  <ul>
+    <li>
+      <a href="index.html">
+      Home
+      </a>
+    </li>
+    <li>
+      <a href="html/color.html" >
+      Color
+      </a>
+    </li>
+    <li>
+      <a href="linear.html" >
+      Linear-gradient
+      </a>
+    </li>
+    <li>
+      <a href="radial.html" >
+      Radial-gradient
+      </a>
+    </li>
+    <li>
+      <a href="contact.html" >
+      Contact
+      </a>
+    </li>
+  </ul>
+  </div>
+    <header class="header-color" id="header">
+      <nav class="navba con">
+        <div class="logo">
+          <h2>colorstab.</h2>
+          <p>multicolored</p>
+      </div>
+        <div class="menu" id="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="../index.html" class="menu-link is-active">
+                <i class="menu-icon ion-md-home"></i>
+                <span class="menu-name">Home</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon ion-md-search"></i>
+                <span class="menu-name">Coverter</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon ion-md-cart"></i>
+                <span class="menu-name">Palettes</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon ion-md-heart"></i>
+                <span class="menu-name">share</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon ion-md-contact"></i>
+                <span class="menu-name">Account</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="container">
         <div class="colors-container">
@@ -59,7 +141,8 @@
         </div>
     </div>
     <h1>in progress</h1>
-    <script src="index.js"></script>
+    <script src="../js/color-index.js"></script>
+    <script src="../index.js"></script>
     <script src="../js/color.js"></script>
 </body>
 </html>

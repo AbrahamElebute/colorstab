@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorstab. | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorstab. | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-query.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <meta name="description" itemprop="description" content="Generate or browse beautiful color combinations for your designs.">
+  <meta name="keywords" itemprop="keywords" content="color scheme, scheme color, color schemes, color theme, color palette, color themes, color palettes, color combinations, color, colors, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty colors, vintage color, color palette from image">
+
+
+  <meta property="og:title" content="colorstab - Your project multicolored!">
+  <meta property="og:description" content=" Get Beautiful color combinations for your project.">
+  <meta property="og:image" content="https://coolors.co/assets/img/og_image.png">
+  <meta property="og:image:width" content="2400">
+  <meta property="og:image:height" content="1260">
+  <meta property="og:site_name" content="colorstab.netily.app">
+  <meta property="og:url" content="https://colorstab.netily.app">
+  <meta property="og:type" content="website">
+
 </head>
 <body>
   <div class="spinner-div">
     <div class="spinner-logo">
-      <h2>colorstab.</h2>
+      <h2>Colorstab.</h2>
       <p>multicolored</p>
     </div>
   </div>
-  <header id="header">
-    <div class="logo">
-        <h2>colorstab.</h2>
+  <header id="main-header">
+    <a href="index.html">
+      <div class="logo">
+        <h2>Colorstab.</h2>
         <p>multicolored</p>
     </div>
-    <p class="saved-container">See saved colors</p>
+    </a>
+    <div class="saved-container">
+      <div class="saved-container_img_con">
+        <p>See saved colors</p>
+        <img src="css/asset/person.jpg" class="saved-container_img" ></img>
+      </div>
+    </div>
   </header>
     
   <nav id="navbar" class="navbar">
@@ -61,7 +82,7 @@
       </div>
     </div>
   </nav>
-<div class="moblieNav">
+  <div class="moblieNav">
   <ul>
     <li>
       <a href="index.html">
@@ -89,11 +110,18 @@
       </a>
     </li>
   </ul>
-</div>
+  </div>
  <section>
   <div class="hero">
-    <div class=" reveal fade-left">
-      <h1 class="typewriter"> Get <span data-text="Free, Bold, Jazzy, Vivid"></span>color with colorstab</h1>
+    <div class=" reveal">
+      <h1 class="typewriter"> Get <span data-text="Free, Bold, Jazzy, Vivid"></span>color with 
+          <kg style="background-image: linear-gradient(317deg,orangered,yellow); 
+                 background-clip: text;
+                -webkit-background-clip: text;
+                 color: transparent;">
+                 Colorstab
+          </kg>
+      </h1>
       <p>Your project made multicolored</p>
     </div>
   </div>
@@ -113,27 +141,141 @@
     <h2>Searching for that perfect color has never been easier, use our HTML color picker to browse millions of colors and color harmonies.</h2>
   </div>
  </section>
- <section class="section3 reveal fade-left ">
-  <div class="section3-img">
-    <img src="css/asset/img.jpg" alt="" style="opacity: 50%;">
+ <section class="section3 ">
+  <div class="section3-img reveal">
+    <img src="css/asset/img.jpg" alt="" style="opacity: 50%;" >
     <img src="css/asset/img.jpg" alt=""  class="section3-img2">
   </div>
-  <div class="section3-content">
+  <div class="section3-content reveal fade-right">
     <h2>Searching for that perfect color has never been easier, use our HTML color picker to browse millions of colors and color harmonies.</h2>
   </div>
  </section>
- <section class="section3 reveal fade-right section4">
-  <div class="section3-content">
+ <section class="section3  section4">
+  <div class="section3-content reveal fade-left">
     <h2>Searching for that perfect color has never been easier, use our HTML color picker to browse millions of colors and color harmonies.</h2>
   </div>
-  <div>
+  <div class="reveal">
     <img src="css/asset/img.jpg" alt="" style="opacity: 50%;">
     <img src="css/asset/img.jpg" alt="" class="section4-img2">
   </div>
  </section>
- <section>
-  
+ <!-- <section class="section-5">
+  <h1>Tools available in colorstab.</h1>
+  <div class="box-container">
+    <div class="box">
+      <h2></h2>
+      <p> </p>
+    </div>
+    <div class="box">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div class="box">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div class="box">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div class="box">
+      <h2> </h2>
+      <p></p>
+    </div>
+  </div>
+ </section> -->
+ <section class="section-5">
+  <h1>Tools available in colorstab.</h1>
+ <div class="box-container">
+  <div class="card reveal fade-left">
+    <div class="box">
+      <img src="css/asset/color-text-svgrepo-com.svg" alt="">
+      <div class="content reveal fade-left">
+        <h3>Color Picker</h3>
+        <p>With colorstab free HTML color selector You can easily generate harmonious color schemes or you can create your own color palette from scratch.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <div class="box">
+      <img src="css/asset/windmill-svgrepo-com.svg" alt="">
+      <div class="content  reveal fade-right">
+        <h3>Color Generator</h3>
+        <p>We think you'll have some fun using the random color generator. This random color picker is quite easy to use and gives you color information</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card reveal fade-left">
+    <div class="box">
+      <img src="css/asset/change-svgrepo-com.svg" alt="">
+      <div class="content reveal fade-left"> 
+        <h3>Color coverter</h3>
+        <p>Use our tool to seamlessly convert between various color systems including CIELAB, HEX, RGB, CMYK, and XYZ. To change your input values</p>
+      </div>
+    </div>
+  </div>
+  <div class="card reveal fade-left">
+    <div class="box">
+      <img src="css/asset/colors-palette-svgrepo-com.svg" alt="">
+      <div class="content  reveal fade-left">
+        <h3>Color Palettes</h3>
+        <p>Create the perfect palette or get inspired by thousands of beautiful color schemes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card reveal">
+    <div class="box">
+      <img src="css/asset/save-svgrepo-com.svg" alt="">
+      <div class="content  reveal fade-right">
+        <h3>Save color</h3>
+        <p>With a click save your color for future use</p>
+      </div>
+    </div>
+  </div>
+  <div class="card reveal fade-left">
+    <div class="box">
+      <img src="css/asset/share-svgrepo-com (1).svg" alt="">
+      <div class="content  reveal fade-left">
+        <h3>share colors</h3>
+        <p>Create the perfect palette or get inspired by thousands of beautiful color schemes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+ <section class="note">
+  <p>
+ "As a designer, you can use this tool however you see fit - from trying out a new brand color palette, to using it as an on-demand CSS color picker. Choosing the right colors for a project is always tough, and we want to make that process as simple as possible. There are plenty of options out there when it comes to online color tools, but we want to be the best. <a href="">Please feel free to get in touch via the “feedback”</a> form if you have any suggestions, feature requests, or other comments.Thanks for using colorstab, and happy designing! 
+  </p>
  </section>
+ <footer>
+    <div class="footer-icon">
+      <a href="http://"><i class="fa-brands fa-twitter" ></i></a>
+      <a href="http://"><i class="fa-brands fa-facebook-messenger" ></i> </a>
+      <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="http://"><i class="fa-solid fa-circle-question" ></i></a>
+    </div>
+    <div class="footer-content">
+      <h4>DESIGNED BY</h4>
+      <h2 style="color: gray;">Abraham Elebute</h2>
+      <h4>© 2021 – 2022 <span>PRIVACY POLICY</span></h5>
+      <p>We built colorstab because we believe tools for design should be well designed themselves. If you like the site or have a suggestion, drop us a line; feedback is very much appreciated and always welcome!</p>
+    </div>
+    <div class="footer-page">
+      <div>
+      <h5>SOCIALIZE</h5>
+      <p>GOOGLE+</p>
+       <p>FACEBOOK</p>
+       <p>CODEPEN</p>
+      </div>
+      <div>
+      <h5>CONTACT</h5>
+      <p>EMAIL</p>
+      </div>
+    </div>
+ </footer>
 <script src="index.js"></script>
 </body>
 </html>
