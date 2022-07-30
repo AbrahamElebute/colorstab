@@ -1,4 +1,8 @@
 let spinnerDiv = document.querySelector(".spinner-div");
+let boxIcon = document.querySelector(".box_icon");
+boxIcon.addEventListener("click",function(){
+  boxIcon.classList.toggle("box_icon_active")
+})
 window.addEventListener("load",function(){
     spinnerDiv.classList.add("spinner-remove")
   })

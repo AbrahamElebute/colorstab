@@ -25,16 +25,12 @@ colorBtn.addEventListener("click",function(){
     }
 })
 
-colorBlur.addEventListener("input",function(){
-colorScreen.style.opacity = colorBlur.value+"%"
-})
 
 printColor.addEventListener("click",function(){
   var copyOut = printColor.textContent;
-  var copyopa = colorBlur.value+"%"
+  // var copyopa = colorBlur.value+"%"
 
-navigator.clipboard.writeText(`background-color:${copyOut}; 
-opacity:${copyopa};`);
+navigator.clipboard.writeText(`${copyOut}`);
   Copied.classList.add("clicked")
   setTimeout(function() {
    Copied.classList.remove("clicked")
@@ -45,3 +41,43 @@ function setColor() {
   printColor.textContent = colorInput.value;
 
 }
+// ---------------------------
+const rangeSliders  = document.querySelectorAll('input');
+const red = document.querySelector('.red');
+const green = document.querySelector('.green')
+const blue = document.querySelector('.blue')
+
+rangeSliders.forEach(rangeSlider => 
+                     rangeSlider.addEventListener('input', displayValue))
+
+rangeSliders.forEach(rangeSlider => 
+                     rangeSlider.addEventListener('click', changeColor))
+
+
+                 
+                    
+function rgbToHex(R,G,B) {
+  const hexDigit = [R, G, B].map( item => {
+    return Number(item).toString(16).padStart(2, '0')
+  }).join('')
+  
+  return '#'+ hexDigit;
+}
+
+function displayValue(e) {
+  let currentValue = e.target.value
+  if(e.target.classList.contains('alpha')) {
+    const alphaValue = currentValue / 100;
+    e.target.nextElementSibling.innerHTML = alphaValue;
+  } else {
+  e.target.nextElementSibling.innerHTML = currentValue;
+  }
+  
+  const hexValue = (rgbToHex(red.value, green.value, blue.value)).toUpperCase();
+  
+  printColor.innerHTML = hexValue;
+}
+function changeColor() {
+  colorScreen.style.backgroundColor = `rgb(${red.value},${green.value},${blue.value})`;
+}
+

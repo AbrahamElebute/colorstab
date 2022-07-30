@@ -5,24 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/color-style.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <link rel="stylesheet" href="../css/linear-gradient.css">
 </head>
 <body>
-    <header><div><h2>Color Picker / Generator</h2> <p>saved colors</p></div></header>
-    <div class="container">
-        <div class="colors-container">
-            <div class="screen">
-                <h4 class="linear-gradient-pointer">linear-gradient</h4>
+    <nav id="navbar" class="navbar">
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html" class="dot">
+            <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="color.html" class="dot">
+            <span>Color</span>
+            </a>
+          </li>
+          <li>
+            <a href="../html/linear.html" class="dot active">
+            <span>Linear-gradient</span>
+            </a>
+          </li>
+          <li>
+            <a href="radial.html" class="dot">
+            <span>Radial-gradient</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="dot">
+            <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-bar-con">
+           <div class="nav-bar">
+            <div>
+              <div class="nav-bars"></div>
+              <div class="nav-bars"></div>
+              <div class="nav-bars"></div>
             </div>
-           <div class="content">
-           <span class="Copied">Copied</span>
-           <h1 id="print-linear-gradient">linear-gradient(12deg,red,blue)</h1>
-           <p>Choose gradient: <input type="color" name="" id=""><input type="color" name="" id=""> </p>
-           <p>Blur gradient: <input type="range" name="" id=""></p>
-           <button id="linear-gradient-btn">Random color</button>
+          </div>
+        </div>
+      </nav>
+      <div class="moblieNav">
+      <ul>
+        <li>
+          <a href="../index.html">
+          Home
+          </a>
+        </li>
+        <li>
+          <a href="html/color.html" >
+          Color
+          </a>
+        </li>
+        <li>
+          <a href="linear.html" >
+          Linear-gradient
+          </a>
+        </li>
+        <li>
+          <a href="radial.html" >
+          Radial-gradient
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" >
+          Contact
+          </a>
+        </li>
+      </ul>
+      </div>
+        <header class="header-color" id="header">
+          <nav class="navba con">
+            <a href="../index.html">
+              <div class="logo">
+                <h2>colorstab.</h2>
+                <p>multicolored</p>
+            </div>
+            </a>
+            <div class="menu" id="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="../index.html" class="menu-link is-active">
+                    <i class="menu-icon ion-md-home"></i>
+                    <span class="menu-name">Home</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <i class="menu-icon ion-md-search"></i>
+                    <span class="menu-name">Coverter</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <i class="menu-icon ion-md-cart"></i>
+                    <span class="menu-name">Palettes</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <i class="menu-icon ion-md-heart"></i>
+                    <span class="menu-name">share</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <i class="menu-icon ion-md-contact"></i>
+                    <span class="menu-name">Account</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <header style="transform: translateY(125px);"><div><h2>Color Picker / Generator</h2> <p>Use Coverter to Covert color</p></div></header>
+    
+    <div class="container">
+     <div class="container_p_div">
+      <p class="container_p">click color name to copy color</p>
+      <div class="colors-container">
+          <div class="screen">
+              <h4 class="linear-gradient-pointer">linear-gradient</h4>
+          </div>
+         <div class="content">
+         <span class="Copied">Copied</span>
+         <h1 id="print-linear-gradient">linear-gradient(12deg,red,blue)</h1>
+         <p>Choose gradient: <input type="color" name="" id=""><input type="color" name="" id=""> </p>
+         <p>Blur gradient: <input type="range" name="" id=""></p>
+         <button id="linear-gradient-btn">Random color</button>
+         </div>
+      </div>
+     </div>
+    </div>
+    <section>
+        <div  class="section_div">
+          <h2 class="section_h2">linear-gradient Color palette</h3>
+            <p>click to copy color</p>
+        </div>
+        <div class="con_linear-gradient_palette">
+          <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
+           </div>
+           <div class="linear-gradient_palette">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <h3>linear-gradient(45deg,red ,orange)</h3>
            </div>
         </div>
-    </div>
+      </section>
+      <footer>
+        <div class="footer-icon">
+          <a href="http://"><i class="fa-brands fa-twitter" ></i></a>
+          <a href="http://"><i class="fa-brands fa-facebook-messenger" ></i> </a>
+          <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="http://"><i class="fa-solid fa-circle-question" ></i></a>
+        </div>
+        <div class="footer-content">
+          <h4>DESIGNED BY</h4>
+          <h2 style="color: gray;">Abraham Elebute</h2>
+          <h4>© 2021 – 2022 <span>PRIVACY POLICY</span></h5>
+          <p>We built colorstab because we believe tools for design should be well designed themselves. If you like the site or have a suggestion, drop us a line; feedback is very much appreciated and always welcome!</p>
+        </div>
+        <div class="footer-page">
+          <div>
+          <h5>SOCIALIZE</h5>
+          <p>GOOGLE+</p>
+           <p>FACEBOOK</p>
+           <p>CODEPEN</p>
+          </div>
+          <div>
+          <h5>CONTACT</h5>
+          <p>EMAIL</p>
+          </div>
+        </div>
+     </footer>
     <script src="Linear.js"></script>
 </body>
 </html>
